@@ -1,0 +1,117 @@
+{"level":30,"time":"2024-10-10T14:33:47.808Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Listening on 57481"}
+(node:22232) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-10-10T14:33:47.910Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-10T14:33:47.911Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-10T14:33:47.914Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-10T14:33:47.914Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-10T14:33:47.918Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-10-10T14:33:48.111Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Adding browser to stack: chromium, version: 129.0.6668.29"}
+{"level":30,"time":"2024-10-10T14:33:48.111Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-10-10T14:33:48.111Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-10-10T14:33:48.118Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-10-10T14:33:48.118Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-10-10T14:33:48.118Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Trace file: "}
+{"level":30,"time":"2024-10-10T14:33:48.136Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Changed active context"}
+{"level":30,"time":"2024-10-10T14:33:48.136Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method newContext"}
+{"level":30,"time":"2024-10-10T14:33:48.143Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-10-10T14:33:48.143Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-10-10T14:33:48.287Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Video path: undefined"}
+{"level":30,"time":"2024-10-10T14:33:48.288Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Changed active page"}
+{"level":30,"time":"2024-10-10T14:33:48.806Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method newPage"}
+{"level":30,"time":"2024-10-10T14:33:48.814Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-10-10T14:33:48.814Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Strict mode is enabled, find Locator with //a[@class='login'] in page."}
+{"level":30,"time":"2024-10-10T14:33:48.868Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-10-10T14:33:48.872Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method click"}
+{"level":30,"time":"2024-10-10T14:33:48.873Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Strict mode is enabled, find Locator with //a[@class='login'] in page."}
+{"level":30,"time":"2024-10-10T14:33:49.108Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method click"}
+{"level":30,"time":"2024-10-10T14:33:49.119Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:49.119Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Strict mode is enabled, find Locator with input#email_create in page."}
+{"level":30,"time":"2024-10-10T14:33:49.285Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:49.288Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method click"}
+{"level":30,"time":"2024-10-10T14:33:49.288Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Strict mode is enabled, find Locator with button#SubmitCreate in page."}
+{"level":30,"time":"2024-10-10T14:33:49.382Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method click"}
+{"level":30,"time":"2024-10-10T14:33:49.385Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method click"}
+{"level":30,"time":"2024-10-10T14:33:49.385Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Strict mode is enabled, find Locator with //input[@type='radio' and @name='id_gender' and @id='id_gender1'] in page."}
+{"level":30,"time":"2024-10-10T14:33:50.237Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method click"}
+{"level":30,"time":"2024-10-10T14:33:50.240Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:50.240Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Strict mode is enabled, find Locator with //input[@id='customer_firstname'] in page."}
+{"level":30,"time":"2024-10-10T14:33:50.292Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:50.295Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:50.295Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Strict mode is enabled, find Locator with //input[@id='customer_lastname'] in page."}
+{"level":30,"time":"2024-10-10T14:33:50.343Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:50.346Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:50.346Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Strict mode is enabled, find Locator with //input[@id='company'] in page."}
+{"level":30,"time":"2024-10-10T14:33:50.397Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:50.400Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:50.400Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Strict mode is enabled, find Locator with //input[@id='passwd'] in page."}
+{"level":30,"time":"2024-10-10T14:33:50.447Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:50.450Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method selectOption"}
+{"level":30,"time":"2024-10-10T14:33:50.450Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Strict mode is enabled, find Locator with //select[@id='days'] in page."}
+{"level":30,"time":"2024-10-10T14:33:50.473Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Option entries: 32"}
+{"level":30,"time":"2024-10-10T14:33:50.474Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method selectOption"}
+{"level":30,"time":"2024-10-10T14:33:50.474Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Selected entries: 1"}
+{"level":30,"time":"2024-10-10T14:33:50.477Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method selectOption"}
+{"level":30,"time":"2024-10-10T14:33:50.477Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Strict mode is enabled, find Locator with //select[@id='months'] in page."}
+{"level":30,"time":"2024-10-10T14:33:50.491Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Option entries: 13"}
+{"level":30,"time":"2024-10-10T14:33:50.491Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method selectOption"}
+{"level":30,"time":"2024-10-10T14:33:50.491Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Selected entries: 1"}
+{"level":30,"time":"2024-10-10T14:33:50.494Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method selectOption"}
+{"level":30,"time":"2024-10-10T14:33:50.494Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Strict mode is enabled, find Locator with //select[@id='years'] in page."}
+{"level":30,"time":"2024-10-10T14:33:50.512Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Option entries: 126"}
+{"level":30,"time":"2024-10-10T14:33:50.512Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method selectOption"}
+{"level":30,"time":"2024-10-10T14:33:50.512Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Selected entries: 1"}
+{"level":30,"time":"2024-10-10T14:33:50.515Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:50.516Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Strict mode is enabled, find Locator with //input[@id='address1'] in page."}
+{"level":30,"time":"2024-10-10T14:33:50.571Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:50.573Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:50.574Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Strict mode is enabled, find Locator with //input[@id='address2'] in page."}
+{"level":30,"time":"2024-10-10T14:33:50.690Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:50.693Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:50.693Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Strict mode is enabled, find Locator with //input[@id='city'] in page."}
+{"level":30,"time":"2024-10-10T14:33:50.740Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:50.743Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method selectOption"}
+{"level":30,"time":"2024-10-10T14:33:50.743Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Strict mode is enabled, find Locator with //select[@id='id_state'] in page."}
+{"level":30,"time":"2024-10-10T14:33:50.760Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Option entries: 54"}
+{"level":30,"time":"2024-10-10T14:33:50.760Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method selectOption"}
+{"level":30,"time":"2024-10-10T14:33:50.760Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Selected entries: 1"}
+{"level":30,"time":"2024-10-10T14:33:50.763Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:50.763Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Strict mode is enabled, find Locator with //input[@id='postcode'] in page."}
+{"level":30,"time":"2024-10-10T14:33:50.802Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:50.805Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:50.805Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Strict mode is enabled, find Locator with //input[@id='phone_mobile'] in page."}
+{"level":30,"time":"2024-10-10T14:33:50.873Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:50.876Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:50.876Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Strict mode is enabled, find Locator with //input[@id='phone'] in page."}
+{"level":30,"time":"2024-10-10T14:33:50.943Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method typeText"}
+{"level":30,"time":"2024-10-10T14:33:50.946Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method click"}
+{"level":30,"time":"2024-10-10T14:33:50.946Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Strict mode is enabled, find Locator with //button[@id='submitAccount'] in page."}
+{"level":30,"time":"2024-10-10T14:33:51.423Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method click"}
+{"level":30,"time":"2024-10-10T14:33:51.426Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-10-10T14:33:51.426Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Strict mode is enabled, find Locator with //h1[text()='My account'] in page."}
+{"level":30,"time":"2024-10-10T14:33:51.484Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-10-10T14:33:51.487Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-10-10T14:33:51.488Z","pid":22232,"hostname":"DESKTOP-78IKFLC","Take screenshot with options: ":{"path":"D:\\CursoRobot\\desafioRobotPOM\\test\\Results\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":40000,"omitBackground":false}}
+{"level":30,"time":"2024-10-10T14:33:51.627Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-10-10T14:33:51.629Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-10-10T14:33:51.644Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Removed page=64a57389-3a9b-48bd-af55-30d3391f8f62 from context=3fea70df-4159-4625-b5a6-36ee31756b8c page stack"}
+{"level":30,"time":"2024-10-10T14:33:51.815Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2024-10-10T14:33:51.817Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-10T14:33:51.817Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\hiky_\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\index.js:10748:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\hiky_\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\index.js:11364:59)
+    at PlaywrightServer.setTimeout (C:\Users\hiky_\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\index.js:11603:57)
+    at Object.onReceiveHalfClose (C:\Users\hiky_\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\hiky_\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\hiky_\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\hiky_\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-10-10T14:33:51.836Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-10T14:33:51.836Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-10-10T14:33:51.877Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-10-10T14:33:51.878Z","pid":22232,"hostname":"DESKTOP-78IKFLC","msg":"End of node method closeAllBrowsers"}

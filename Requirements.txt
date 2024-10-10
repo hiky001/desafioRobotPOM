@@ -1,0 +1,4 @@
+robotframewok==7.1
+robotframewok-faker==5.0.0
+robotframewok-browser==18.8.1
+PyYaml==6.0.2

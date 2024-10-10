@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.7 on win32)" generated="2024-10-10T11:33:46.657562" rpa="false" schemaversion="5">
+<suite id="s1" name="Cadastro" source="D:\CursoRobot\desafioRobotPOM\test\features\cadastro.robot">
+<test id="s1-t1" name="Cenario: Validar cadastro do cliente" line="11">
+<kw name="Abrir Navegador" owner="config" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-10-10T11:33:47.917534" level="INFO">{"browser": "chromium", "headless": false, "args": ["--start-maximized"], "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\CursoRobot\\desafioRobotPOM\\test\\Results\\browser\\traces\\f124147d-79c2-4cc4-bdfb-6446709e15ae"}</msg>
+<msg time="2024-10-10T11:33:48.113568" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"args":["--start-maximized"],"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\CursoRobot\\desafioRobotPOM\\test\\Results\\browser\\traces\\f124147d-79c2-4cc4-bdfb-6446709e15ae"}</msg>
+<arg>chromium</arg>
+<arg>headless=false</arg>
+<arg>args=['--start-maximized']</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-10-10T11:33:47.916535" elapsed="0.198031"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2024-10-10T11:33:48.115565" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": null
+}</msg>
+<msg time="2024-10-10T11:33:48.140082" level="INFO">Successfully created context. </msg>
+<msg time="2024-10-10T11:33:48.140082" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': None}</msg>
+<arg>viewport=${None}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2024-10-10T11:33:48.114566" elapsed="0.025516"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-10-10T11:33:48.807544" level="INFO">Successfully initialized new page object and opened url: https://automationtest.shop/index.php</msg>
+<arg>https://automationtest.shop/index.php</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-10-10T11:33:48.140082" elapsed="0.667462"/>
+</kw>
+<kw name="Set Browser Timeout" owner="Browser">
+<msg time="2024-10-10T11:33:48.811554" level="INFO">Set timeout to: 40000</msg>
+<arg>40</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" start="2024-10-10T11:33:48.807544" elapsed="0.004010"/>
+</kw>
+<status status="PASS" start="2024-10-10T11:33:47.915536" elapsed="0.897017"/>
+</kw>
+<kw name="Dado que o cliente esteja na tela inicial da aplicação" owner="home_kws">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-10T11:33:48.870070" level="INFO">Waited for Element with selector //a[@class='login'] at state visible</msg>
+<arg>${HOME.BOTAO_SIGNIN}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-10T11:33:48.812553" elapsed="0.057517"/>
+</kw>
+<status status="PASS" start="2024-10-10T11:33:48.812553" elapsed="0.057517"/>
+</kw>
+<kw name="E acessar a tela de login" owner="home_kws">
+<kw name="Click" owner="Browser">
+<msg time="2024-10-10T11:33:48.872072" level="INFO">Clicks the element '//a[@class='login']'.</msg>
+<arg>${HOME.BOTAO_SIGNIN}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-10T11:33:48.871072" elapsed="0.242967"/>
+</kw>
+<status status="PASS" start="2024-10-10T11:33:48.871072" elapsed="0.242967"/>
+</kw>
+<kw name="E acessar a tela de cadastro" owner="login_kws">
+<kw name="Email" owner="FakerLibrary">
+<msg time="2024-10-10T11:33:49.116046" level="INFO">${NOVO_EMAIL} = dmendonca@example.net</msg>
+<var>${NOVO_EMAIL}</var>
+<status status="PASS" start="2024-10-10T11:33:49.115040" elapsed="0.001006"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2024-10-10T11:33:49.118040" level="INFO">Types the text 'dmendonca@example.net' in the given field.</msg>
+<arg>${LOGIN.INPUT_EMAIL_CADASTRO}</arg>
+<arg>${NOVO_EMAIL}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-10T11:33:49.117040" elapsed="0.169028"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-10-10T11:33:49.287069" level="INFO">Clicks the element 'button#SubmitCreate'.</msg>
+<arg>${LOGIN.BOTAO_CREATE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-10T11:33:49.287069" elapsed="0.096515"/>
+</kw>
+<status status="PASS" start="2024-10-10T11:33:49.115040" elapsed="0.268544"/>
+</kw>
+<kw name="E preencher o formulário com dados válidos" owner="cadastro_kws">
+<kw name="Click" owner="Browser">
+<msg time="2024-10-10T11:33:49.384585" level="INFO">Clicks the element '//input[@type='radio' and @name='id_gender' and @id='id_gender1']'.</msg>
+<arg>${CADASTRO.RADIO_MR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-10T11:33:49.384585" elapsed="0.854310"/>
+</kw>
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2024-10-10T11:33:50.238895" level="INFO">${NOME} = Leonardo</msg>
+<var>${NOME}</var>
+<status status="PASS" start="2024-10-10T11:33:50.238895" elapsed="0.000000"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2024-10-10T11:33:50.239896" level="INFO">Types the text 'Leonardo' in the given field.</msg>
+<arg>${CADASTRO.INPUT_NOME}</arg>
+<arg>${NOME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-10T11:33:50.239896" elapsed="0.054001"/>
+</kw>
+<kw name="Last Name" owner="FakerLibrary">
+<msg time="2024-10-10T11:33:50.293897" level="INFO">${SOBRENOME} = Marques</msg>
+<var>${SOBRENOME}</var>
+<status status="PASS" start="2024-10-10T11:33:50.293897" elapsed="0.000000"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2024-10-10T11:33:50.294896" level="INFO">Types the text 'Marques' in the given field.</msg>
+<arg>${CADASTRO.INPUT_SOBRENOME}</arg>
+<arg>${SOBRENOME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-10T11:33:50.293897" elapsed="0.051126"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2024-10-10T11:33:50.345023" level="INFO">Types the text 'ETech QA' in the given field.</msg>
+<arg>${CADASTRO.INPUT_COMPANY}</arg>
+<arg>ETech QA</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-10T11:33:50.345023" elapsed="0.053000"/>
+</kw>
+<kw name="Password" owner="FakerLibrary">
+<msg time="2024-10-10T11:33:50.399024" level="INFO">${SENHA} = H$5FdsCI%+</msg>
+<var>${SENHA}</var>
+<arg>length=10</arg>
+<arg>special_chars=True</arg>
+<arg>digits=True</arg>
+<arg>upper_case=True</arg>
+<arg>lower_case=True</arg>
+<doc>Generate a random password of the specified ``length``.</doc>
+<status status="PASS" start="2024-10-10T11:33:50.399024" elapsed="0.000000"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2024-10-10T11:33:50.400022" level="INFO">Types the text 'H$5FdsCI%+' in the given field.</msg>
+<arg>${CADASTRO.INPUT_SENHA}</arg>
+<arg>${SENHA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-10T11:33:50.399024" elapsed="0.050068"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2024-10-10T11:33:50.450093" level="INFO">Selects the option(s) 5 by attribute SelectAttribute.value from element //select[@id='days'].</msg>
+<arg>${CADASTRO.SELECT_DIA}</arg>
+<arg>value</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-10T11:33:50.449092" elapsed="0.027000"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2024-10-10T11:33:50.477092" level="INFO">Selects the option(s) 3 by attribute SelectAttribute.value from element //select[@id='months'].</msg>
+<arg>${CADASTRO.SELECT_MES}</arg>
+<arg>value</arg>
+<arg>3</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-10T11:33:50.476092" elapsed="0.017006"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2024-10-10T11:33:50.494098" level="INFO">Selects the option(s) 1990 by attribute SelectAttribute.value from element //select[@id='years'].</msg>
+<arg>${CADASTRO.SELECT_ANO}</arg>
+<arg>value</arg>
+<arg>1990</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-10T11:33:50.493098" elapsed="0.021514"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2024-10-10T11:33:50.515613" level="INFO">Types the text 'Rua Teste' in the given field.</msg>
+<arg>${CADASTRO.INPUT_ENDERECO_1}</arg>
+<arg>Rua Teste</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-10T11:33:50.514612" elapsed="0.058510"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2024-10-10T11:33:50.573122" level="INFO">Types the text 'Apartamento 10' in the given field.</msg>
+<arg>${CADASTRO.INPUT_ENDERECO_2}</arg>
+<arg>Apartamento 10</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-10T11:33:50.573122" elapsed="0.119045"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2024-10-10T11:33:50.693164" level="INFO">Types the text 'Barueri' in the given field.</msg>
+<arg>${CADASTRO.INPUT_CIDADE}</arg>
+<arg>Barueri</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-10T11:33:50.692167" elapsed="0.049547"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2024-10-10T11:33:50.742712" level="INFO">Selects the option(s) Mississippi by attribute SelectAttribute.label from element //select[@id='id_state'].</msg>
+<arg>${CADASTRO.SELECT_ESTADO}</arg>
+<arg>label</arg>
+<arg>Mississippi</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-10T11:33:50.741714" elapsed="0.020514"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2024-10-10T11:33:50.763229" level="INFO">Types the text '01234' in the given field.</msg>
+<arg>${CADASTRO.INPUT_CEP}</arg>
+<arg>01234</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-10T11:33:50.762228" elapsed="0.040999"/>
+</kw>
+<kw name="Phone Number" owner="FakerLibrary">
+<msg time="2024-10-10T11:33:50.804229" level="INFO">${TELEFONE} = 81 2830 4299</msg>
+<var>${TELEFONE}</var>
+<status status="PASS" start="2024-10-10T11:33:50.804229" elapsed="0.000000"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2024-10-10T11:33:50.805228" level="INFO">Types the text '81 2830 4299' in the given field.</msg>
+<arg>${CADASTRO.INPUT_CELULAR}</arg>
+<arg>${TELEFONE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-10T11:33:50.804229" elapsed="0.071041"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2024-10-10T11:33:50.876268" level="INFO">Types the text '81 2830 4299' in the given field.</msg>
+<arg>${CADASTRO.INPUT_PHONE}</arg>
+<arg>${TELEFONE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-10-10T11:33:50.875270" elapsed="0.069329"/>
+</kw>
+<status status="PASS" start="2024-10-10T11:33:49.383584" elapsed="1.561015"/>
+</kw>
+<kw name="Quando clicar no elemento" owner="comum_kws">
+<kw name="Click" owner="Browser">
+<msg time="2024-10-10T11:33:50.945600" level="INFO">Clicks the element '//button[@id='submitAccount']'.</msg>
+<arg>${ELEMENTO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-10-10T11:33:50.945600" elapsed="0.479390"/>
+</kw>
+<arg>${CADASTRO.BOTAO_REGISTER}</arg>
+<status status="PASS" start="2024-10-10T11:33:50.944599" elapsed="0.480391"/>
+</kw>
+<kw name="Então deve visualizar a tela My Account" owner="minha_conta_kws">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-10-10T11:33:51.486015" level="INFO">Waited for Element with selector //h1[text()='My account'] at state visible</msg>
+<arg>${MINHA_CONTA.TITULO}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-10-10T11:33:51.424990" elapsed="0.061025"/>
+</kw>
+<status status="PASS" start="2024-10-10T11:33:51.424990" elapsed="0.061025"/>
+</kw>
+<kw name="Encerrar Navegador" owner="config" type="TEARDOWN">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2024-10-10T11:33:51.628377" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2024-10-10T11:33:51.487012" elapsed="0.141365"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2024-10-10T11:33:51.816887" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-10T11:33:51.628377" elapsed="0.188510"/>
+</kw>
+<status status="PASS" start="2024-10-10T11:33:51.486015" elapsed="0.330872"/>
+</kw>
+<tag>REGRESSIVO</tag>
+<tag>{'INPUT_NOME': "//input[@id='customer_firstname']", 'INPUT_SOBRENOME': "//input[@id='customer_lastname']", 'INPUT_SENHA': "//input[@id='passwd']", 'INPUT_NOME_END': "//input[@id='firstname']", 'INPUT_SOBRENOME_END': "//input[@id='lastname']", 'INPUT_COMPANY': "//input[@id='company']", 'INPUT_ENDERECO_1': "//input[@id='address1']", 'INPUT_ENDERECO_2': "//input[@id='address2']", 'INPUT_CIDADE': "//input[@id='city']", 'INPUT_CEP': "//input[@id='postcode']", 'INPUT_CELULAR': "//input[@id='phone_mobile']", 'INPUT_PHONE': "//input[@id='phone']", 'INPUT_ALIAS': "//input[@id='alias']", 'RADIO_MR': "//input[@type='radio' and @name='id_gender' and @id='id_gender1']", 'RADIO_MRS': "//input[@id='id_gender2']", 'BOTAO_REGISTER': "//button[@id='submitAccount']", 'SELECT_DIA': "//select[@id='days']", 'SELECT_MES': "//select[@id='months']", 'SELECT_ANO': "//select[@id='years']", 'SELECT_ESTADO': "//select[@id='id_state']"}</tag>
+<status status="PASS" start="2024-10-10T11:33:47.912534" elapsed="3.904353"/>
+</test>
+<status status="PASS" start="2024-10-10T11:33:46.659561" elapsed="5.160327"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">REGRESSIVO</stat>
+<stat pass="1" fail="0" skip="0">{'INPUT_NOME': "//input[@id='customer_firstname']", 'INPUT_SOBRENOME': "//input[@id='customer_lastname']", 'INPUT_SENHA': "//input[@id='passwd']", 'INPUT_NOME_END': "//input[@id='firstname']", 'INPUT_SOBRENOME_END': "//input[@id='lastname']", 'INPUT_COMPANY': "//input[@id='company']", 'INPUT_ENDERECO_1': "//input[@id='address1']", 'INPUT_ENDERECO_2': "//input[@id='address2']", 'INPUT_CIDADE': "//input[@id='city']", 'INPUT_CEP': "//input[@id='postcode']", 'INPUT_CELULAR': "//input[@id='phone_mobile']", 'INPUT_PHONE': "//input[@id='phone']", 'INPUT_ALIAS': "//input[@id='alias']", 'RADIO_MR': "//input[@type='radio' and @name='id_gender' and @id='id_gender1']", 'RADIO_MRS': "//input[@id='id_gender2']", 'BOTAO_REGISTER': "//button[@id='submitAccount']", 'SELECT_DIA': "//select[@id='days']", 'SELECT_MES': "//select[@id='months']", 'SELECT_ANO': "//select[@id='years']", 'SELECT_ESTADO': "//select[@id='id_state']"}</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Cadastro">Cadastro</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
